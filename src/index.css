@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+:root {
+  /* --main-bg-color: black; */
+  --main-bg-color: #f6f6fe;
+  /* --main-text-color: #fff; */
+  --main-text-color: black;
+  /* --secondary-color: #5d77a5; */
+  --secondary-color: #ffc700;
+  --secondary-color-dark: #d4a600;
+  --tertiary-color: #4a6592;
+  --box-shadow-color: rgba(0, 0, 0, 0.2);
+  --gradient: linear-gradient(
+    45deg,
+    #506897,
+    #6a81ab,
+    #8397b7,
+    #b4c0ce,
+    #dfc99e,
+    #e3b66d,
+    #cc956c
+  );
+  --gradient2: linear-gradient(
+    225deg,
+    /* #e3b66d, */
+    #506897,
+    #000
+  );
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased; */
+  font-family: "Source Sans Pro", sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--main-bg-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+  background: #060b26;
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+}
+
+body a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}

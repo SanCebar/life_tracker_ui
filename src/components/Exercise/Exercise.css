@@ -1,0 +1,86 @@
+.Exercise {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.Exercise .x-feed {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    width: 95%;
+    padding: 0.5em 0;
+}
+.Exercise .x-card p {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    padding-left: 0.8em;
+}
+.Exercise .x-card-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    background: var(--gradient2);
+    background-size: 700%;
+
+
+    height: 10em;
+    width: 12em;
+    margin: 0em 0.5em;
+    padding: 0.5em 1em;
+
+    background-color: rgba(13, 13, 13, 1);
+    color: var(--main-bg-color);
+    /* border: solid 1px; */
+    border-radius: 0.8em;
+    box-shadow: 0.8em 0.8em 10px -2px var(--box-shadow-color);
+
+}
+.Exercise .x-card-content .x-heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 100%;
+}
+.Exercise .x-card-content .x-category {
+    font-size: 0.9rem;
+    height: fit-content;
+    letter-spacing: 1px;
+    text-align: center;
+    white-space: nowrap;
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 2px 8px;
+    margin-left: auto;
+}
+.Exercise .x-card-content .x-stats {
+    font-size: 1.5rem;
+    padding-left: 2em;
+}
+.Exercise a {
+    text-decoration: underline;
+}
+.Exercise a:hover {
+    text-decoration: none;
+}
+.Exercise button {
+    margin: 0 1rem;
+    padding: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    background: var(--main-bg-color);
+    transition: .25s;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid var(--main-text-color);
+    color: var(--main-text-color);
+    border-radius: 5px;
+}
+.Exercise button:hover {
+    transform: translateY(2px);
+}

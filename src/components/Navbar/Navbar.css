@@ -1,0 +1,71 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: transparent;
+    /* background-color: black; */
+
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+.navbar .content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+}
+.navbar .content .logo {
+    /* flex: 1; */
+    font-size: 2rem;
+    color: #fff;
+}
+.navbar .content .pages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.navbar .content .pages li {
+    margin: 0 2rem;
+    font-size: 1rem;
+}
+.navbar .content .pages a.active {
+    padding-bottom: 0.5em;
+    border-bottom: solid 2px var(--secondary-color);
+    transition: ease-in 0.25s;
+    transition-delay: 3s;
+}
+.navbar .content .user-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navbar .content .user-buttons .username {
+    color: var(--secondary-color-dark);
+}
+.skewBtn, .user-buttons button {
+    margin: 0 1rem;
+    padding: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    transition: .5s;
+    font-size: 1rem;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    border-radius: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.skewBtn:hover, 
+.user-buttons a.active button {
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    transform: scale(1.1);
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+}
